@@ -1,4 +1,4 @@
-# free5gc-Docker
+# NetSoft2020-Tutorial4-Demo2-Exp2
 
 ## Dependencies
 
