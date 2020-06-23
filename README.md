@@ -45,7 +45,7 @@ $ sudo docker image ls
 ```
 The output should be similar to the following:
 <p align="center">
-    <img src="images/images_d2_e3.png"/> 
+    <img src="images/images_d2_e2.png"/> 
 </p>
 
 To run the containers, use the following command:
@@ -59,7 +59,7 @@ $ sudo docker-compose ps
 ```
 The output should be similar to the following:
 <p align="center">
-    <img src="images/containers_d1_e3.png"/> 
+    <img src="images/containers_d2_e2.png"/> 
 </p>
 
 Done! The software is successfully installed.
