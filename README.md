@@ -72,7 +72,12 @@ The output should be similar to the following:
 
 # Show the experiment
 
-Configuração do webapp...
+The first step of the experiment is to store in HSS the UE's information using the Web Interface of the free5GC project.
+<p align="center">
+    <img src="images/login.png" height="450"/> 
+    <img src="images/webapp.png" height="450"/> 
+</p>
+
 
 We use the [openSTF](https://openstf.io/) tool to access the smartphone remotely.
 This software is available at http://localhost:7100, as is shown in the image below.
@@ -80,7 +85,7 @@ This software is available at http://localhost:7100, as is shown in the image be
     <img src="images/openSTF.png" height="450" width="450"/> 
 </p>
 
-We can see the smartphone connected in the network called Software Radio Systems LTE available. 
+We can see the smartphone connected in the network called free5GC available. 
 <p align="center">
     <img src="images/connectedfree5GC.png" height="450"/> 
 </p>
@@ -89,6 +94,11 @@ We use the [PingTools Network Utilities](https://play.google.com/store/apps/deta
 <p align="center">
     <img src="images/network.png" height="450"/> 
     <img src="images/ping.png" height="450"/> 
+</p>
+
+Finally, we can use any app, for example see a video. 
+<p align="center">
+    <img src="images/nemo.png" height="450"/> 
 </p>
 
 # Additional comments
