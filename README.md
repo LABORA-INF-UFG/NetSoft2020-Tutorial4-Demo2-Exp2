@@ -1,19 +1,26 @@
 # IEEE NetSoft2020-Tutorial4-Demo1-Exp3
 
-This experiment aims to demonstrate the deployment of a mobile network based on hardware and software, integrating a 4G RAN and a 5G Core with the Service-Based Architecture (SBA), as illustrated by the following image.
+This experiment aims to demonstrate the deployment of a mobile network based on hardware and software, integrating a 4G RAN and a 5G Core with the Service-Based Architecture (SBA), as illustrated by the following image. This experiment's main goal is to demonstrate a connection between UE in hardware (conventional cell phone), 4G RAN in hardware (SDR - Software-Defined Radio) and software, and 5G SBA core implemented in software.
 <p align="center">
     <img src="images/demo2-exp2.png"/> 
 </p>
 
-In this experiment, RAN is deployed with the [Software Radio Systems LTE](https://github.com/srsLTE/srsLTE) project, i.e., LTE. The Core is implemented using the [free5GC](https://www.free5gc.org/) project. This experiment's main goal is to demonstrate a connection between UE in hardware (conventional cell phone), 4G RAN in hardware (SDR - Software-Defined Radio) and software, and 5G SBA core implemented in software.
+ ## Installation
+
+**Requirements**
 
 The minimum hardware requirement and software to run this experiment is shown in the image below.
-<p align="center">
-    <img src="images/demo2-exp2-hw-sw.png"/> 
-</p>
-For this experiment, we assume that the machine has full access to the Internet.
+* Smartphone Android
+* SIM card (writable)
+* USRP B210
+* Mini PC (RAM: 4GB and disk space: 40GB)
+* Ubuntu 16.04 LTS
+* Docker 18.09.7
+* srsLTE release 19_12
+* free5GC stage 1
 
-# 1 - Installation tools
+**Steps**
+
 We need two tools to run this experiment, _Git_ and _Docker_
 
 To install _Git_, run the following command:
@@ -32,7 +39,7 @@ $ sudo apt-get install docker-ce docker-ce-cli containerd.io
 $ git clone https://github.com/LABORA-INF-UFG/NetSoft2020-Tutorial4-Demo2-Exp2.git
 ```
 
-# 2 - Build the images and running the containers
+# Build the images and running the containers
 
 To build the eNB and all 5GC images, use the following command:  
 ```
@@ -62,4 +69,32 @@ The output should be similar to the following:
     <img src="images/containers_d2_e2.png"/> 
 </p>
 
-Done! The software is successfully installed.
+
+# Show the experiment
+
+We use the [openSTF](https://openstf.io/) tool to access the smartphone remotely.
+This software is available at http://localhost:7100, as is shown in the image below.
+<p align="center">
+    <img src="images/openSTF.png" height="450" width="450"/> 
+</p>
+
+We can see the smartphone connected in the network called Software Radio Systems LTE available. 
+<p align="center">
+    <img src="images/connectedfree5GC.png" height="450"/> 
+</p>
+
+We use the [PingTools Network Utilities](https://play.google.com/store/apps/details?id=ua.com.streamsoft.pingtools&hl=pt_BR) tool available at GooglePlay to test the connectivity of the network.
+<p align="center">
+    <img src="images/network.png" height="450"/> 
+    <img src="images/ping.png" height="450"/> 
+</p>
+
+# Additional comments
+
+The SIM card used is of [sysmocom](https://www.sysmocom.de/index.html) with an Android Samsung Galaxy S7 SM-G930F.
+
+SDR is an [Ettus B210](https://www.ettus.com/) with four antennas connected via USB in the mini PC.  
+
+RAN is deployed with the [Software Radio Systems LTE](https://github.com/srsLTE/srsLTE) project.
+
+The Core is implemented using the [free5GC](https://www.free5gc.org/) project.
