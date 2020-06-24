@@ -2,7 +2,7 @@
 
 This experiment aims to demonstrate the deployment of a mobile network based on hardware and software, integrating a 4G RAN and a 5G Core with the Service-Based Architecture (SBA), as illustrated by the following image. This experiment's main goal is to demonstrate a connection between UE in hardware (conventional cell phone), 4G RAN in hardware (SDR - Software-Defined Radio) and software, and 5G SBA core implemented in software.
 <p align="center">
-    <img src="images/demo2-exp2.png"/> 
+    <img src="images/demo2-exp2.png" height="300"/> 
 </p>
 
  ## Installation
