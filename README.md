@@ -74,7 +74,7 @@ The output should be similar to the following:
 
 The first step of the experiment is to store in HSS the UE's information using the Web Interface of the free5GC project.
 <p align="center">
-    <img src="images/login.png"/> 
+    <img src="images/login.png" height="450"/> 
     <img src="images/webapp.png"/> 
 </p>
 
