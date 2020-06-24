@@ -74,8 +74,8 @@ The output should be similar to the following:
 
 The first step of the experiment is to store in HSS the UE's information using the Web Interface of the free5GC project.
 <p align="center">
-    <img src="images/login.png" height="450"/> 
-    <img src="images/webapp.png" height="450"/> 
+    <img src="images/login.png" height="450" width="450"/> 
+    <img src="images/webapp.png" height="450" width="450"/> 
 </p>
 
 
@@ -98,7 +98,7 @@ We use the [PingTools Network Utilities](https://play.google.com/store/apps/deta
 
 Finally, we can use any app, for example see a video. 
 <p align="center">
-    <img src="images/nemo.png" height="450"/> 
+    <img src="images/nemo.png"/> 
 </p>
 
 # Additional comments
