@@ -72,6 +72,8 @@ The output should be similar to the following:
 
 # Show the experiment
 
+Configuração do webapp...
+
 We use the [openSTF](https://openstf.io/) tool to access the smartphone remotely.
 This software is available at http://localhost:7100, as is shown in the image below.
 <p align="center">
