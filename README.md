@@ -1,4 +1,4 @@
-# IEEE NetSoft2020-Tutorial4-Demo1-Exp3
+# IEEE NetSoft2020-Tutorial4-Demo2-Exp2
 
 This experiment aims to demonstrate the deployment of a mobile network based on hardware and software, integrating a 4G RAN and a 5G Core with the Service-Based Architecture (SBA), as illustrated by the following image. This experiment's main goal is to demonstrate a connection between UE in hardware (conventional cell phone), 4G RAN in hardware (SDR - Software-Defined Radio) and software, and 5G SBA core implemented in software.
 <p align="center">
@@ -72,7 +72,7 @@ The output should be similar to the following:
 
 # Show the experiment
 
-The first step of the experiment is to store in HSS the UE's information using the Web Interface of the free5GC project.
+The first step of the experiment is to store in HSS the UE's information using the Web Interface of the [free5GC](https://www.free5gc.org/) project that is available at http://localhost:3000, as is shown in the image below.
 <p align="center">
     <img src="images/login.png" height="450"/> 
     <img src="images/webapp.png"/> 
