@@ -25,59 +25,57 @@ We need two tools to run this experiment, _Git_ and _Docker_
 
 To install _Git_, run the following command:
 ```
-$ sudo apt-get install git-all
+sudo apt-get install git-all
 ```
 
 To install _Docker_, run the following commands:
 ```
-$ sudo apt-get update
-$ sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
  After, we can clone the **NetSoft2020-Tutorial4-Demo2-Exp2 project**:
 ```
-$ git clone https://github.com/LABORA-INF-UFG/NetSoft2020-Tutorial4-Demo2-Exp2.git
+git clone https://github.com/LABORA-INF-UFG/NetSoft2020-Tutorial4-Demo2-Exp2.git
 ```
-
-# Build the images and running the containers
 
 To build the eNB and all 5GC images, use the following command:  
 ```
-$ sudo docker build -t netsoft2020tutorial4demo2exp2 .
+sudo docker build -t netsoft2020tutorial4demo2exp2 .
 ```
+
+To run the containers, use the following command:
+```
+sudo docker-compose up -d
+```
+
+Done! The software is successfully installed.
+
+## Tests
 
 We can check if the images are up:
 ```
-$ sudo docker image ls
+sudo docker image ls
 ```
 The output should be similar to the following:
 <p align="center">
     <img src="images/images_d2_e2.png"/> 
 </p>
 
-To run the containers, use the following command:
-```
-$ sudo docker-compose up -d
-```
-
 We can check if the containers are up:
 ```
-$ sudo docker-compose ps
+sudo docker-compose ps
 ```
 The output should be similar to the following:
 <p align="center">
     <img src="images/containers_d2_e2.png"/> 
 </p>
 
-
-# Show the experiment
-
 The first step of the experiment is to store in HSS the UE's information using the Web Interface of the [free5GC](https://www.free5gc.org/) project that is available at http://localhost:3000, as is shown in the image below.
 <p align="center">
     <img src="images/login.png" height="450"/> 
     <img src="images/webapp.png"/> 
 </p>
-
 
 We use the [openSTF](https://openstf.io/) tool to access the smartphone remotely.
 This software is available at http://localhost:7100, as is shown in the image below.
@@ -101,7 +99,7 @@ Finally, we can use any app, for example see a video.
     <img src="images/nemo.png"/> 
 </p>
 
-# Additional comments
+## Additional comments
 
 The SIM card used is of [sysmocom](https://www.sysmocom.de/index.html) with an Android Samsung Galaxy S7 SM-G930F.
 
