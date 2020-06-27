@@ -1,4 +1,4 @@
-From free5gc-base
+From netsoft2020tutorial4demo2exp2
 
 RUN apt-get install -y iptables
 
